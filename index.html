@@ -39,6 +39,7 @@
   .price small{font-size:.78rem; font-weight:500; color:var(--muted); display:block; letter-spacing:0}
   .shots{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin:0 0 16px}
   .shots img{width:100%; height:170px; object-fit:cover; border-radius:7px; background:#eef0f1; display:block}
+  .shots img.fit{object-fit:contain; background:#fff; padding:4px}
   .shots.one img{height:230px}
   .noimg{
     display:flex; align-items:center; justify-content:center; text-align:center;
@@ -122,7 +123,7 @@
       <img src="img/relay-plate.jpg" alt="Front housing of the 120A latching relay showing 120A 250VAC and COIL 12VDC" loading="lazy">
       <img src="img/relay-pair.jpg" alt="Two 120A latching relays side by side, both marked COIL 12VDC" loading="lazy">
       <img src="img/relay-single.jpg" alt="Single 120A latching relay held in hand with copper busbar terminals and coil pins" loading="lazy">
-      <img src="img/relay-dims.jpg" alt="Dimensioned drawing of the relay: 43mm long, 33.2mm wide, 22mm tall, 41mm terminal spacing, M6 holes at 11.4mm pitch" loading="lazy">
+      <img src="img/relay-dims.jpg" class="fit" alt="Dimensioned drawing of the relay: 43mm long, 33.2mm wide, 22mm tall, 41mm terminal spacing, M6 holes at 11.4mm pitch" loading="lazy">
     </div>
     <p class="body">A real latching relay: it closes on a pulse, opens on a pulse, and then holds that state with the coil completely dead. That is the whole point. An ordinary relay has to keep its coil energised to stay closed — around 2 to 5 watts, running the whole time, which over a month pulls roughly 150Ah out of a 12V battery. Use an ordinary relay to stop something draining your battery and the relay itself becomes the drain. This one draws nothing to hold.</p>
     <p class="body">Built for 4WD dual-battery setups and boats. Cut the link to the start battery when you park up, so the fridge, dash cam, UHF and chargers cannot flatten it — and the isolator adds no drain of its own. On a boat it holds through a mooring without drawing current, and the contacts are held by a permanent magnet rather than spring tension, so engine vibration does not make them chatter.</p>
