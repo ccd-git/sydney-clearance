@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: __SITE_URL__/sitemap.xml
+Sitemap: https://ccd-git.github.io/sydney-clearance/sitemap.xml
